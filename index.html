@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- <a id="top"></a> -->
+    <header>
+      <nav class="navbar">
+        <div class="nav_bar_left">
+          <div class="amzlogo border">
+            <a href="http://127.0.0.1:5500/Clones/Amazon/index.html">
+              <img src="amazonin_logo.png" alt="logo.img" />
+            </a>
+          </div>
+
+          <div class="address border">
+            <a href="">
+              <p class="add_first">Deliver to</p>
+              <div class="add_icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add_second">Srinagar pincode</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="nav_search">
+          <select class="search_select">
+            <option value="">All Categories</option>
+            <option value="">Alexa Skills</option>
+            <option value="">Amazon Devices</option>
+            <option value="">Amazon Fashion</option>
+            <option value="">Appliances</option>
+            <option value="">Apps & Games</option>
+            <option value="">Auidible audiobooks</option>
+            <option value="">Baby</option>
+            <option value="">Beauty</option>
+            <option value="">Car & Motarbikes</option>
+            <option value="">Clothing & Accessories</option>
+            <option value="">Computers &accessoires</option>
+            <option value="">Deals</option>
+            <option value="">Electronics</option>
+            <option value="">Furniture</option>
+            <option value="">Garden & Outdoors</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Search Amazon.in"
+            class="search_input"
+          />
+          <div class="search_icon" tabindex="0">
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/750px-Search_Icon.svg.png"
+              alt="img"
+            />
+          </div>
+        </div>
+        <div class="nav_language border">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_India.png/1200px-Flag_of_India.png"
+            alt="img"
+          />
+          <select class="select_language">
+            <option value="English">EN English</option>
+            <option value="Hindi">HI हिंदी</option>
+            <option value="Bengali">BN বাংলা</option>
+            <option value="Telugu">TE తెలుగు</option>
+            <option value="Marathi">MR मराठी</option>
+            <option value="Tamil">TA தமிழ்</option>
+            <option value="Gujarati">GU ગુજરાતી</option>
+            <option value="Kannada">KN ಕನ್ನಡ</option>
+            <option value="Odia">OR ଓଡ଼ିଆ</option>
+            <option value="Malayalam">ML മലയാളം</option>
+            <option value="Punjabi">PA ਪੰਜਾਬੀ</option>
+            <option value="Assamese">AS অসমীয়া</option>
+            <option value="Maithili">MAI मैथिली</option>
+            <option value="Sanskrit">SA संस्कृत</option>
+            <option value="Urdu">UR اُردُو</option>
+            <option value="Konkani">KO कोंकणी</option>
+            <option value="Sindhi">SD سنڌي</option>
+            <option value="Dogri">DO डोगरी</option>
+            <option value="Manipuri">MN মৈতৈলোন্</option>
+            <option value="Bodo">BRX बड़ो</option>
+            <option value="Santhali">SAT ᱥᱟᱱᱛᱟᱞᱤ</option>
+            <option value="Kashmiri">KS کٲشُر</option>
+          </select>
+        </div>
+        <div class="nav_signin border">
+          <p><span class="nav_first">Hello, Sign in</span></p>
+          <p class="nav_second">Accounts & Lists</p>
+        </div>
+        <div class="nav_return border">
+          <p><span class="nav_first">Returns</span></p>
+          <p class="nav_second">& Orders</p>
+        </div>
+        <div class="nav_cart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
+        </div>
+      </nav>
+
+      <div class="panel">
+        <div class="panel_all border_panel">
+          <i class="fa-solid fa-bars"></i>
+          <span>All</span>
+        </div>
+        <div class="panel_ops">
+          <p class="option border_panel">MX Player</p>
+          <p class="option border_panel">Sell</p>
+          <p class="option border_panel">Best Sellers</p>
+          <p class="option border_panel">Today's Deals</p>
+          <p class="option border_panel">Mobiles</p>
+          <p class="option border_panel">Electronics</p>
+          <p class="option border_panel">Customer Service</p>
+          <p class="option border_panel">Prime</p>
+          <p class="option border_panel">Home & Kitchen</p>
+          <p class="option border_panel">Amazon Pay</p>
+          <p class="option border_panel">New Releases</p>
+          <p class="option border_panel">Fashion</p>
+          <p class="option border_panel">Computers</p>
+          <p class="option border_panel">Cars & Motorbike</p>
+          <p class="option border_panel">Books</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hero-section"></div>
+      <div class="main">
+        <div class="shop-section">
+          <div class="box1 box">
+            <h2>Exclusive Laptop Deals</h2>
+            <div class="b1_imgs">
+              <img src="box1.1_img.jpg" class="b1_img i1_1" />
+              <img src="box1.2_img.jpg" class="b1_img i1_2" />
+              <img src="box1.3_img.jpg" class="b1_img i1_3" />
+              <img src="box1.4_img.jpg" class="b1_img i1_4" />
+            </div>
+            <a href="" class="b_btm_a"
+              ><span class="b_btm_span">See all deals</span></a
+            >
+          </div>
+
+          <div class="box2 box">
+            <h2>Revamp your home in style</h2>
+            <div class="b_imgs">
+              <div class="b2_1">
+                <img src="b2.1_img.jpg" class="b_img i1" alt="" />
+                <span class="b-pd_name">Cushion covers, bedsheets & more</span>
+              </div>
+              <div class="b2_2">
+                <img src="b2.2_img.jpg" class="b_img i2" alt="" />
+                <span class="b-pd_name">Figurines, vases & more</span>
+              </div>
+              <div class="b2_3">
+                <img src="b2.3_img.jpg" class="b_img i3" alt="" />
+                <span class="b-pd_name">Home storage</span>
+              </div>
+              <div class="b2_4">
+                <img src="b2.4_img.jpg" class="b_img i4" alt="" />
+                <span class="b-pd_name">Lightning solutions</span>
+              </div>
+            </div>
+            <a href="" class="b_btm_a"
+              ><span class="b_btm_span">Explore all</span></a
+            >
+          </div>
+          <div class="box3 box">
+            <h2>Appliances for your home | Upto to 55% off</h2>
+            <div class="b_imgs">
+              <div class="b3_1">
+                <img src="b3.1_img.jpg" class="b_img i1" alt="" />
+                <span class="b-pd_name">Air conditioners</span>
+              </div>
+              <div class="b3_2">
+                <img src="b3.2_img.jpg" class="b_img i2" alt="" />
+                <span class="b-pd_name">Refrigerators</span>
+              </div>
+              <div class="b3_3">
+                <img src="b3.3_img.jpg" class="b_img i3" alt="" />
+                <span class="b-pd_name">Microwaves</span>
+              </div>
+              <div class="b3_4">
+                <img src="b3.4_img.jpg" class="b_img i4" alt="" />
+                <span class="b-pd_name">Washing machines</span>
+              </div>
+            </div>
+            <a href="" class="b_btm_a"
+              ><span class="b_btm_span">See more</span></a
+            >
+          </div>
+
+          <div class="box4 box">
+            <h2>Automotive essentials | Upto to 60% off</h2>
+            <div class="b_imgs">
+              <div class="b4_1">
+                <img src="b4.1_img.jpg" class="b_img i1" alt="" />
+                <span class="b-pd_name">Cleaning accessories</span>
+              </div>
+              <div class="b4_2">
+                <img src="b4.2_img.jpg" class="b_img i2" alt="" />
+                <span class="b-pd_name">Tyre & rim care</span>
+              </div>
+              <div class="b4_3">
+                <img src="b4.3_img.jpg" class="b_img i3" alt="" />
+                <span class="b-pd_name">helmets</span>
+              </div>
+              <div class="b4_4">
+                <img src="b4.4_img.jpg" class="b_img i4" alt="" />
+                <span class="b-pd_name">Vacuum cleaner</span>
+              </div>
+            </div>
+            <a href="" class="b_btm_a"
+              ><span class="b_btm_span">See more</span></a
+            >
+          </div>
+
+          <div class="box5 box">
+            <h2>Starting ₹149 | Headphones</h2>
+            <div class="b_imgs">
+              <div class="b5_1">
+                <img src="b5.1_img.jpg" class="b_img i1" alt="" />
+                <span class="b-pd_name">Starting ₹249 | boAt</span>
+              </div>
+              <div class="b5_2">
+                <img src="b5.2_img.jpg" class="b_img i2" alt="" />
+                <span class="b-pd_name">Starting ₹349 | boult</span>
+              </div>
+              <div class="b5_3">
+                <img src="b5.3_img.jpg" class="b_img i3" alt="" />
+                <span class="b-pd_name">Starting ₹649 |Noise</span>
+              </div>
+              <div class="b5_4">
+                <img src="b5.4_img.jpg" class="b_img i4" alt="" />
+                <span class="b-pd_name">Starting ₹149 | Zebronics</span>
+              </div>
+            </div>
+            <a href="" class="b_btm_a"
+              ><span class="b_btm_span">See all offers</span></a
+            >
+          </div>
+
+          <div class="box6 box">
+            <h2>Starting ₹199 | Amazon Brands & more</h2>
+            <div class="b_imgs">
+              <div class="b6_1">
+                <img src="b6.1_img.jpg" class="b_img i1" alt="" />
+                <span class="b-pd_name">Starting ₹149 |Bedsheets</span>
+              </div>
+              <div class="b6_2">
+                <img src="b6.2_img.jpg" class="b_img i2" alt="" />
+                <span class="b-pd_name">Starting ₹149 |Curtains</span>
+              </div>
+              <div class="b6_3">
+                <img src="b6.3_img.jpg" class="b_img i3" alt="" />
+                <span class="b-pd_name"
+                  >Minimmum 40% off | ironing board & more</span
+                >
+              </div>
+              <div class="b6_4">
+                <img src="b6.4_img.jpg" class="b_img i4" alt="" />
+                <span class="b-pd_name">Upto 60% off | Home decor</span>
+              </div>
+            </div>
+            <a href="" class="b_btm_a"
+              ><span class="b_btm_span">See more</span></a
+            >
+          </div>
+
+          <div class="box7 box">
+            <h2>Up to 60% off | Styles for women</h2>
+            <div class="b_imgs">
+              <div class="b7_1">
+                <img src="b7.1_img.jpg" class="b_img i1" alt="" />
+                <span class="b-pd_name">Women's Clothing</span>
+              </div>
+              <div class="b7_2">
+                <img src="b7.2_img.jpg" class="b_img i2" alt="" />
+                <span class="b-pd_name">Footwear+Handbags</span>
+              </div>
+              <div class="b7_3">
+                <img src="b7.3_img.jpg" class="b_img i3" alt="" />
+                <span class="b-pd_name">Watches</span>
+              </div>
+              <div class="b7_4">
+                <img src="b7.4_img.jpg" class="b_img i4" alt="" />
+                <span class="b-pd_name">Fashion jewellery</span>
+              </div>
+            </div>
+            <a href="" class="b_btm_a"
+              ><span class="b_btm_span">End of season sale</span></a
+            >
+          </div>
+
+          <div class="box8 box">
+            <h2>Min. 40% off | Toys & Fun games | Amazon brands</h2>
+            <div class="b_imgs">
+              <div class="b8_1">
+                <img src="b8.1_img.jpg" class="b_img i1" alt="" />
+                <span class="b-pd_name">Min. 50% off | soft toys</span>
+              </div>
+              <div class="b8_2">
+                <img src="b8.2_img.jpg" class="b_img i2" alt="" />
+                <span class="b-pd_name">Min. 40% off | Indoor games</span>
+              </div>
+              <div class="b8_3">
+                <img src="b8.3_img.jpg" class="b_img i3" alt="" />
+                <span class="b-pd_name">Min. 40% off | Ride ons</span>
+              </div>
+              <div class="b8_4">
+                <img src="b8.4_img.jpg" class="b_img i4" alt="" />
+                <span class="b-pd_name">Min. 50% off | Outdoor games</span>
+              </div>
+            </div>
+            <a href="" class="b_btm_a"
+              ><span class="b_btm_span">See all offers</span></a
+            >
+          </div>
+        </div>
+
+        <div class="slide_container">
+          <h2>
+            Up to 60% off | Best offers on furniture from stores near you
+            <span class="s_more">See all offers</span>
+          </h2>
+          <div class="slide_imgs">
+            <div class="slide_img">
+              <img src="s1.1_img.jpg" alt="" class="s1_img" />
+            </div>
+            <div class="slide_img">
+              <img src="s1.2_img.jpg" alt="" class="s1_img" />
+            </div>
+            <div class="slide_img">
+              <img src="s1.3_img.jpg" alt="" class="s1_img" />
+            </div>
+            <div class="slide_img">
+              <img src="s1.4_img.jpg" alt="" class="s1_img" />
+            </div>
+            <div class="slide_img">
+              <img src="s1.5_img.jpg" alt="" class="s1_img" />
+            </div>
+            <div class="slide_img">
+              <img src="s1.6_img.jpg" alt="" class="s1_img" />
+            </div>
+            <div class="slide_img">
+              <img src="s1.7_img.jpg" alt="" class="s1_img" />
+            </div>
+            <div class="slide_img">
+              <img src="s1.8_img.jpg" alt="" class="s1_img" />
+            </div>
+            <div class="slide_img">
+              <img src="s1.9_img.jpg" alt="" class="s1_img" />
+            </div>
+            <div class="slide_img">
+              <img src="s1.10_img.jpg" alt="" class="s1_img" />
+            </div>
+          </div>
+        </div>
+        <div class="row_break"></div>
+      </div>
+    </main>
+    <footer>
+      <a href="#top"
+        ><div class="footer_panel1">
+          <span>Back to top</span>
+        </div></a
+      >
+      <div class="footer_panel2">
+        <div class="footer_col col1">
+          <span class="footer_col-head">Get to Know Us</span>
+          <ul>
+            <li>About Amazon</li>
+            <li>Careers</li>
+            <li>Press Releases</li>
+            <li>Amazon Science</li>
+          </ul>
+        </div>
+
+        <span class="footer_col-gap"></span>
+
+        <div class="footer_col col2">
+          <span class="footer_col-head">Connect with Us</span>
+          <ul>
+            <li>Facebook</li>
+            <li>Twiiter</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+
+        <span class="footer_col-gap"></span>
+
+        <div class="footer_col col3">
+          <span class="footer_col-head">Make Money with Us</span>
+          <ul>
+            <li><a href="">Sell on Amazon</a></li>
+            <li><a href="">Sell under Amazon Accelerator</a></li>
+            <li><a href="">Protect and Build Your Brand</a></li>
+            <li><a href="">Amazon Global Selling</a></li>
+            <li><a href="">Supply to Amazon</a></li>
+            <li><a href="">Become an Affiliate</a></li>
+            <li><a href="">Fulfilment by Amazon</a></li>
+            <li><a href="">Advertise Your Products</a></li>
+            <li><a href="">Amazon Pay on Merchants</a></li>
+          </ul>
+        </div>
+
+        <span class="footer_col-gap"></span>
+
+        <div class="footer_col col4">
+          <span class="footer_col-head">Let Us Help You</span>
+          <ul>
+            <li><a href="">Your Account</a></li>
+            <li><a href="">Returns Centre</a></li>
+            <li><a href="">Recalls and Product Safety Alerts</a></li>
+            <li><a href="">100% Purchase Protection</a></li>
+            <li><a href="">Amazon App Download</a></li>
+            <li><a href="">Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_panel3">
+        <span class="footer_logo">
+          <img src="amazon_logo.png" alt="" class="footer_panel3_logo"
+        /></span>
+
+        <div class="footer_panel3_content">
+          <div class="footer_p3_language">
+            <img
+              src="footer_p3_globe_img.png"
+              alt=""
+              class="footer_p3_language_img"
+            />
+            <span class="footer_p3_language_select">English</span>
+            <img src="up_down.png" alt="" class="up_down" />
+          </div>
+          <div class="footer_p3_location">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_India.png/1200px-Flag_of_India.png"
+              alt=""
+              class="footer_p3_location_img"
+            />
+            <span class="footer_p3_location_name">India</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer_p3_break"></div>
+
+      <div class="pages">
+        <ul class="pages_ul1">
+          <li>
+            <h5>AbeBooks</h5>
+            <span class="span_pages">
+              Books, art
+              <br />
+              & collectibles
+            </span>
+          </li>
+
+          <span class="pages_space1"></span>
+
+          <li>
+            <h5>Amazon Web Services</h5>
+            <span class="span_pages"
+              >Scalable Cloud
+              <br />
+              Computing Services
+            </span>
+          </li>
+
+          <span class="pages_space1"></span>
+
+          <li>
+            <h5>Audible</h5>
+            <span class="span_pages">
+              Download
+              <br />Audio Books
+            </span>
+          </li>
+
+          <span class="pages_space1"></span>
+
+          <li>
+            <h5>IMDb</h5>
+            <span class="span_pages">Movies, TV <br />& Celebrities </span>
+          </li>
+        </ul>
+        <ul class="pages_ul2">
+          <li>
+            <h5>Shopbop</h5>
+            <span class="span_pages"
+              >Designer
+              <br />
+              & Fashion Brands
+            </span>
+          </li>
+
+          <span class="pages_space2"></span>
+
+          <li>
+            <h5>Amazon Business</h5>
+            <span class="span_pages"
+              >Everything For
+              <br />
+              Your Business
+            </span>
+          </li>
+
+          <span class="pages_space2"></span>
+
+          <li>
+            <h5>Prime Now</h5>
+            <span class="span_pages"
+              >2-Hour Delivery
+              <br />
+              on Everyday Items
+            </span>
+          </li>
+
+          <span class="pages_space2"></span>
+
+          <li>
+            <h5>Amazon Prime Music</h5>
+            <span class="span_pages"
+              >100 million songs, ad-free
+              <br />
+              Over 15 million podcast episodes
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright_panel">
+        <ul>
+          <li><a>Conditions of Use & Sale</a></li>
+          <li><a>Privacy Notice</a></li>
+          <li><a>Interest-Based Ads</a></li>
+        </ul>
+        <span class="copyright"
+          >© 1996-2025, Amazon.com, Inc. or its affiliates</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
